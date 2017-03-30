@@ -1,0 +1,327 @@
+[{
+	"id": 1,
+	"botMessage": "Hi.. Welcome to Singapore Airlines",
+	"botMessageType": "dialog",
+	"nextResponse": 2
+},{
+	"id": 2,
+	"botMessage": ["Please let me know what I may help you with, today?", "Can you tell me what help do you need today?"],
+	"botMessageType": "choice",
+	"choice": [{
+		"option": ["Book a Trip"],
+		"nextResponse": 14
+	}, {
+		"option": ["Manage Booking"],
+		"nextResponse": 36
+	},{
+		"option": ["Check In"],
+		"nextResponse": 41
+	},{
+		"option": ["Flight Status"],
+		"nextResponse": 45
+	},{
+		"option":[
+			"Faq's",
+			"Queries"
+		],
+		"nextResponse":3
+	}],
+	"userMessageType": "number",
+	"retryPrompt" : "Please choose from the given"
+},{
+	"id": 3,
+	"botMessage": "Please select your question?",
+	"botMessageType": "autocomplete",
+	"userMessageType": "autocomplete",
+	"nextResponse": 3,
+	"retryPrompt" : "Please select correct option"
+},{
+	"id":14,
+	"botMessage":"Please select what you want to book",
+	"botMessageType":"choice",
+	"choice":[{
+		"option":"Flights",
+		"nextResponse":15
+	},{
+		"option":"Hotels",
+		"nextResponse":16
+	},{
+		"option":"Cars",
+		"nextResponse":17
+	}]
+},{
+	"id":15,
+	"botMessage":"Please choose you want to Book or Redeem",
+	"botMessageType":"choice",
+	"choice":[{
+		"option":"Book Flight",
+		"nextResponse":18
+	},{
+		"option":"Redeem Flights",
+		"nextResponse": 19
+	}]
+},{
+	"id":18,
+	"botMessage":"Please select from where",
+	"botMessageType":"autocomplete",
+	"nextResponse":20
+},{
+	"id":20,
+	"botMessage":"Please select to where",
+	"botMessageType":"autocomplete",
+	"nextResponse":21
+},{
+	"id":21,
+	"botMessage":"Please choose you want to Book one way or return",
+	"botMessageType":"choice",
+	"choice":[{
+		"option":"Return",
+		"nextResponse":22
+	},{
+		"option":"One Way",
+		"nextResponse": 30
+	}]
+},{
+	"id":22,
+	"botMessage":"Please choose the departure date",
+	"botMessageType":"year",
+	"nextResponse":23
+},{
+	"id":23,
+	"botMessage":"Please choose the Return Date",
+	"botMessageType":"year",
+	"nextResponse":24
+},{
+	"id":24,
+	"botMessage":"Do you want to have Flexible travel dates / Lowest fares",
+	"botMessageType":"confirm",
+	"nextResponse":[25,25]
+},{
+	"id":25,
+	"botMessage":"Please choose the class which you want",
+	"botMessageType":"choice",
+	"choice":[{
+		"option":"Flexible travel dates / Lowest fares",
+		"nextResponse":26
+	},{
+		"option":"Business",
+		"nextResponse":26
+	},{
+		"option":"First / Suites",
+		"nextResponse":26
+	}]
+},{
+	"id":26,
+	"botMessage":"How many Adults are travelling with you?",
+	"botMessageType":"text",
+	"userMessageType":"number",
+	"userInputVar":"adults",
+	"nextResponse":27
+},{
+	"id":27,
+	"botMessage":"How many Children (2-11 years old) are travelling with you?",
+	"botMessageType":"text",
+	"userMessageType":"number",
+	"userInputVar":"children",
+	"nextResponse":28
+},{
+	"id":28,
+	"botMessage":"How many Infants (0-23 months old) are travelling with you?",
+	"botMessageType":"text",
+	"userMessageType":"number",
+	"userInputVar":"infants",
+	"nextResponse":29
+},{
+	"id":29,
+	"botMessage":"Do you have any promo code?",
+	"botMessageType":"confirm",
+	"nextResponse": [5,40]
+},{
+	"id":5,
+	"botMessage":"Please enter the Promo code",
+	"botMessageType":"text",
+	"userMessageType":"text",
+	"userInputVar":"promo",
+	"nextResponse":40
+},{
+	"id":30,
+	"botMessage":"Please choose the departure date",
+	"botMessageType":"year",
+	"nextResponse":24
+},{
+	"id":19,
+	"botMessage":"Please select from where",
+	"botMessageType":"autocomplete",
+	"nextResponse":31
+},{
+	"id":31,
+	"botMessage":"Please select to where",
+	"botMessageType":"autocomplete",
+	"nextResponse":32
+},{
+	"id":32,
+	"botMessage":"Please choose you want to Book one way or return",
+	"botMessageType":"choice",
+	"choice":[{
+		"option":"Return",
+		"nextResponse":33
+	},{
+		"option":"One Way",
+		"nextResponse": 35
+	}]
+},{
+	"id":33,
+	"botMessage":"Please choose the departure date",
+	"botMessageType":"year",
+	"nextResponse":34
+},{
+	"id":34,
+	"botMessage":"Please choose the Return Date",
+	"botMessageType":"year",
+	"nextResponse":25
+},{
+	"id":35,
+	"botMessage":"Please choose the departure date",
+	"botMessageType":"year",
+	"nextResponse":25
+},{
+	"id":36,
+	"botMessage":"Please select your appropriate choice",
+	"botMessageType":"choice",
+	"choice":[{
+		"option":"Booking Reference",
+		"nextResponse":37
+	},{
+		"option":"E-Ticket Number",
+		"nextResponse":38
+	}]
+},{
+	"id":37,
+	"botMessage":"Please enter 6 letters and numbers to retrieve your booking?",
+	"botMessageType":"text",
+	"userMessageType":"text",
+	"userInputVar":"bookingRef",
+	"nextResponse": 39
+},{
+	"id":38,
+	"botMessage":"Please enter the 13 digit E-Ticket number?",
+	"botMessageType":"text",
+	"userMessageType":"text",
+	"userInputVar":"eTicket",
+	"nextResponse": 39
+},{
+	"id":39,
+	"botMessage":"Please enter the last/family name, as in passport?",
+	"botMessageType":"text",
+	"userMessageType":"text",
+	"userInputVar":"eTicket",
+	"nextResponse": 40
+},{
+	"id": 40,
+	"botMessage": "Thanks",
+	"botMessageType": "dialog",
+	"nextResponse": 2
+},{
+	"id":41,
+	"botMessage":"Please select your appropriate choice",
+	"botMessageType":"choice",
+	"choice":[{
+		"option":"SQ/MI Booking Reference",
+		"nextResponse":42
+	},{
+		"option":"SQ/MI E-ticket number",
+		"nextResponse":43
+	}]
+},{
+	"id":42,
+	"botMessage":"Please enter 6 letters and numbers to check in for one or more passengers, from 48 to 1.5 hours before your flight?",
+	"botMessageType":"text",
+	"userMessageType":"text",
+	"userInputVar":"SQbookingRef",
+	"nextResponse": 44
+},{
+	"id":43,
+	"botMessage":"Please enter 13 numbers to check in for one passenger only, from 48 to 1.5 hours before your flight?",
+	"botMessageType":"text",
+	"userMessageType":"text",
+	"userInputVar":"SQeTicket",
+	"nextResponse": 44
+},{
+	"id":44,
+	"botMessage":"Please enter the last/family name, as in passport?",
+	"botMessageType":"text",
+	"userMessageType":"text",
+	"userInputVar":"eTicket",
+	"nextResponse": 40
+},{
+	"id":45,
+	"botMessage":"Please select your appropriate choice",
+	"botMessageType":"choice",
+	"choice":[{
+		"option":"Select by Route",
+		"nextResponse":46
+	},{
+		"option":"Select by flight number",
+		"nextResponse":50
+	}]
+},{
+	"id":46,
+	"botMessage":"Please select the From city",
+	"botMessageType":"autocomplete",
+	"nextResponse":47
+},{
+	"id":47,
+	"botMessage":"Please select the To city",
+	"botMessageType":"autocomplete",
+	"nextResponse":48
+},{
+	"id":48,
+	"botMessage":"Please select if it is Departure or Arrival flight",
+	"botMessageType":"choice",
+	"choice":[{
+		"option":"Depart",
+		"nextResponse":49
+	},{
+		"option":"Arrive",
+		"nextResponse":49
+	}]
+},{
+	"id":49,
+	"botMessage":"Please select the date",
+	"botMessageType":"year",
+	"nextResponse":40
+},{
+	"id":50,
+	"botMessage":"Please select your appropriate choice",
+	"botMessageType":"choice",
+	"choice":[{
+		"option":"SQ",
+		"nextResponse":51
+	},{
+		"option":"MI",
+		"nextResponse":51
+	}]
+},{
+	"id":51,
+	"botMessage":"Please enter the flight number?",
+	"botMessageType":"text",
+	"userMessageType":"text",
+	"userInputVar":"flightNumber",
+	"nextResponse": 52
+},{
+	"id":52,
+	"botMessage":"Please select if it is Departure or Arrival flight",
+	"botMessageType":"choice",
+	"choice":[{
+		"option":"Depart",
+		"nextResponse":53
+	},{
+		"option":"Arrive",
+		"nextResponse":53
+	}]
+},{
+	"id":53,
+	"botMessage":"Please select the city",
+	"botMessageType":"autocomplete",
+	"nextResponse":49
+}]
