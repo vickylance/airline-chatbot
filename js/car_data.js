@@ -22,3 +22,7 @@ var faq1 = {
   'Where are the   Airlines check-in kiosks located?': 'The   Airlines check-in kiosks are located at the following airports:   Changi Terminal 2 (Row 3) and Terminal 3 (Rows 3 and 4) Amsterdam Schiphol (Departure Hall 3) Copenhagen London Heathrow Terminal 2 (Zone A)',
   'Why can’t I complete my check-in at the check-in kiosk?': 'You’ll need to approach the airport check-in counter if: your passport or visa is not machine-readable your booking is not confirmed, or you’re on a waitlist you or the passenger you’re checking in is an unaccompanied minor you’ve booked an extra seat (for instance, for a musical instrument) you require special assistance (for instance, you’re travelling with a pet, you require medical assistance, or you’ve requested for the meet-and-assist service)'
 }
+
+var cities = {
+
+}

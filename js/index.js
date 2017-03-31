@@ -451,8 +451,8 @@ function isValidDate (str) {
 function isValidCarRegNo (carRegNo) {
   if (carRegNo !== undefined && carRegNo !== null && carRegNo !== '' && jQ.trim(carRegNo) !== '') {
     var vehicleNo = carRegNo.split('-')
-    if (vehicleNo.length == 4) {
-      if (vehicleNo[0].length == 2 && vehicleNo[1].length == 2 && vehicleNo[2].length == 2 && vehicleNo[3].length == 4 &&
+    if (vehicleNo.length === 4) {
+      if (vehicleNo[0].length === 2 && vehicleNo[1].length === 2 && vehicleNo[2].length === 2 && vehicleNo[3].length === 4 &&
         isNaN(vehicleNo[0]) && isNaN(vehicleNo[2]) && !isNaN(vehicleNo[1]) && !isNaN(vehicleNo[3])) {
         return true
       } else {
@@ -499,7 +499,7 @@ function generateRandomName () {
   var males = ['Sathish', 'Robert', 'Dhanish', 'Parker', 'Zeeshan', 'Vinay', 'Rathod', 'Vijayan', 'Aashish', 'Bharath', 'Ajith', 'Nithin', 'Ramesh']
   var females = ['Aarthi', 'Aswathy', 'Swathy', 'Trisha', 'Gayathri', 'Nivethitha', 'Shruthi', 'Yamini', 'Preethi', 'Dharini', 'Sindhuja']
   var randomName
-  if (randomGender == 1) {
+  if (randomGender === 1) {
     randomName = 'Mr.' + males[Math.floor(Math.random() * males.length)]
   } else {
     randomName = ((Math.random() < 0.5) ? 'Mrs.' : 'Ms.') + females[Math.floor(Math.random() * females.length)]
