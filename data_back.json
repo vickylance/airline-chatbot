@@ -64,11 +64,15 @@
 	"id":18,
 	"botMessage":"Please select from where",
 	"botMessageType":"text",
+	"userMessageType":"text",
+	"userInputVar":"fromPlace",
 	"nextResponse":20
 },{
 	"id":20,
 	"botMessage":"Please select to where",
 	"botMessageType":"text",
+	"userMessageType":"text",
+	"userInputVar":"toPlace",
 	"nextResponse":21
 },{
 	"id":21,
@@ -85,11 +89,15 @@
 	"id":22,
 	"botMessage":"Please choose the departure date",
 	"botMessageType":"year",
+	"userMessageType":"year",
+	"userInputVar":"departDate",
 	"nextResponse":23
 },{
 	"id":23,
 	"botMessage":"Please choose the Return Date",
 	"botMessageType":"year",
+	"userMessageType":"year",
+	"userInputVar":"returnDate",
 	"nextResponse":24
 },{
 	"id":24,
@@ -147,16 +155,22 @@
 	"id":30,
 	"botMessage":"Please choose the departure date",
 	"botMessageType":"year",
+	"userMessageType":"year",
+	"userInputVar":"departDate",
 	"nextResponse":24
 },{
 	"id":19,
 	"botMessage":"Please select from where",
 	"botMessageType":"text",
+	"userMessageType":"text",
+	"userInputVar":"fromPlace",
 	"nextResponse":31
 },{
 	"id":31,
 	"botMessage":"Please select to where",
 	"botMessageType":"text",
+	"userMessageType":"text",
+	"userInputVar":"toPlace",
 	"nextResponse":32
 },{
 	"id":32,
@@ -173,16 +187,22 @@
 	"id":33,
 	"botMessage":"Please choose the departure date",
 	"botMessageType":"year",
+	"userMessageType":"year",
+	"userInputVar":"departDate",
 	"nextResponse":34
 },{
 	"id":34,
 	"botMessage":"Please choose the Return Date",
 	"botMessageType":"year",
+	"userMessageType":"year",
+	"userInputVar":"returnDate",
 	"nextResponse":25
 },{
 	"id":35,
 	"botMessage":"Please choose the departure date",
 	"botMessageType":"year",
+	"userMessageType":"year",
+	"userInputVar":"departDate",
 	"nextResponse":25
 },{
 	"id":36,
@@ -268,11 +288,15 @@
 	"id":46,
 	"botMessage":"Please select the From city",
 	"botMessageType":"text",
+	"userMessageType":"text",
+	"userInputVar":"fromPlace",
 	"nextResponse":47
 },{
 	"id":47,
 	"botMessage":"Please select the To city",
 	"botMessageType":"text",
+	"userMessageType":"text",
+	"userInputVar":"toPlace",
 	"nextResponse":48
 },{
 	"id":48,
@@ -289,6 +313,8 @@
 	"id":49,
 	"botMessage":"Please select the date",
 	"botMessageType":"year",
+	"userMessageType":"year",
+	"userInputVar":"date",
 	"nextResponse":40
 },{
 	"id":50,
@@ -323,5 +349,7 @@
 	"id":53,
 	"botMessage":"Please select the city",
 	"botMessageType":"text",
+	"userMessageType":"text",
+	"userInputVar":"selectCity",
 	"nextResponse":49
 }]
